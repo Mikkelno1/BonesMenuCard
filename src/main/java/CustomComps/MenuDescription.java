@@ -23,6 +23,7 @@ public class MenuDescription extends VBox
         pLabel.getStyleClass().add("menu-itemPrice");
         dLabel.getStyleClass().add("menu-itemDescription");
         spacer.getStyleClass().add("menu-itemSpacer");
+        rb.getStyleClass().add("radio-button");
 
 
         //rb.setStyle("-fx-border-color: #ff1111; -fx-background-radius: 2");

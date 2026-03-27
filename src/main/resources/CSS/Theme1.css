@@ -56,4 +56,16 @@
     -fx-min-height: 1;
 }
 
+.radio-button .radio {
+    -fx-background-color: beige;
+    -fx-border-color: red;
+    -fx-border-width: 2;
+    -fx-border-radius: 50%;
+}
+
+.scene-background {
+    -fx-background-color: beige;
+}
+
+
 
