@@ -1,0 +1,71 @@
+/* UberHeader */
+.uber-header .label
+{
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+}
+
+.uber-spacer{
+    -fx-border-color: transparent transparent red transparent;  /*Top, højre, bund, venstre*/
+    -fx-border-style: dotted;
+    -fx-border-width: 0 0 4 0;
+    -fx-min-height: 1;
+}
+
+/* MenuHeader */
+.menu-header
+{
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+
+/* MenuDescription */
+.menu-itemHeader
+{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.menu-itemDescription
+{
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+    -fx-text-fill: #2c3e50;
+}
+
+.menu-itemPrice
+{
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+    -fx-text-fill: #2c3e50;
+}
+
+.menu-itemContainer
+{
+    -fx-spacing: 1.0;
+}
+
+.menu-itemSpacer {
+    -fx-border-color: transparent transparent black transparent;  /*Top, højre, bund, venstre*/
+    -fx-border-style: dotted;
+    -fx-border-width: 0 0 2 0;
+    -fx-min-height: 1;
+}
+
+.radio-button .radio {
+    -fx-background-color: beige;
+    -fx-border-color: red;
+    -fx-border-width: 2;
+    -fx-border-radius: 50%;
+}
+
+.scene-background {
+    -fx-background-color: beige;  /*made comment so i can upload this bullshit to bullhub*/
+}
+
+
+
