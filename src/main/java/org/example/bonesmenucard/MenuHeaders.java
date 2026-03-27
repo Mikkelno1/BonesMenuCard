@@ -10,6 +10,6 @@ public class MenuHeaders extends Label
     public MenuHeaders(String s)
     {
         super(s);
+        getStyleClass().add("menu-header");
     }
-    StyleManager.getInstance().addUserAgentStylesheet("Theme1.css");
 }
