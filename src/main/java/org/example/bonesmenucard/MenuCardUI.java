@@ -27,7 +27,6 @@ public class MenuCardUI
 
     }
 
-
     public ScrollPane getView()
     {
         return root;
