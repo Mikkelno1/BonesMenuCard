@@ -27,6 +27,7 @@ public class HelloApplication extends Application
         scene.getStylesheets().add(
                 getClass().getResource("/CSS/Theme1.css").toExternalForm()
         );
+
         stage.setTitle("Bones menu");
         stage.setScene(scene);
         stage.show();
