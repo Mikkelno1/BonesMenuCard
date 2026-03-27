@@ -24,8 +24,7 @@ public class HelloApplication extends Application
         MenuCardUI mCUI = new MenuCardUI();
         Parent root = mCUI.getView();
         Scene scene = new Scene(root, xWidth, yHeight);
-        //Application.setUserAgentStylesheet(getClass().getResource("Theme1.css").toExternalForm());
-        StyleManager.getInstance().addUserAgentStylesheet("C:\\Users\\Mikkel  Norinder\\Exercism\\java\\AnonymousInnerClass\\BonesMenuCard\\src\\main\\resources\\CSS\\Theme1.css");
+        scene.setUserAgentStylesheet(getClass().getResource("/CSS/Theme1.css").toExternalForm());
         stage.setTitle("Bones menu");
         stage.setScene(scene);
         stage.show();
