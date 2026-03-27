@@ -1,4 +1,19 @@
-/*MenuHeader*/
+/* UberHeader */
+.uber-header .label
+{
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+}
+
+.uber-spacer{
+    -fx-border-color: transparent transparent red transparent;  /*Top, højre, bund, venstre*/
+    -fx-border-style: dotted;
+    -fx-border-width: 0 0 4 0;
+    -fx-min-height: 1;
+}
+
+/* MenuHeader */
 .menu-header
 {
     -fx-font-size: 30px;
