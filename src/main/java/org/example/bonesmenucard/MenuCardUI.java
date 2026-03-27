@@ -1,33 +1,52 @@
 package org.example.bonesmenucard;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
+
 
 public class MenuCardUI
 {
-    ScrollPane root;
+    Pane root;
 
-    RadioButton rb1 = new RadioButton();
 
-    private int xWidth = 500;
-    private int yHeight = 1200;
 
+    MenuHeaders mh = new MenuHeaders("Steak");
+    MenuDescription md = new MenuDescription("Reedd steak", "Made red with love");
+
+    Label label = new Label("Hello there");
+
+
+
+
+    private int mhX = 100;
+    private int mhY = 100;
+    private int mdX = 150;
+    private int mdY = 150;
+
+
+    MenuCardUI()
+    {
+        uiLayOut();
+    }
 
     public void uiLayOut()
     {
-        root = new ScrollPane();
-        root.setLayoutX(xWidth);
-        root.setLayoutY(yHeight);
+        root = new Pane();
 
+        mh.setLayoutX(mhX);
+        mh.setLayoutY(mhY);
+        md.setLayoutX(mdX);
+        md.setLayoutY(mdY);
+        label.setLayoutX(mdX);
+        label.setLayoutY(mdY);
+
+        root.getChildren().addAll(md, mh);
 
     }
 
-    public ScrollPane getView()
+    public Pane getView()
     {
         return root;
     }
