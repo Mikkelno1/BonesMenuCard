@@ -23,8 +23,6 @@ public class MenuCardUI
         root = new ScrollPane();
         root.setLayoutX(xWidth);
         root.setLayoutY(yHeight);
-
-
     }
 
     public ScrollPane getView()
