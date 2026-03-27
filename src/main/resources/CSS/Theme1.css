@@ -1,11 +1,13 @@
-
+/*MenuHeader*/
 .menu-header
 {
-    -fx-font-size: 50px;
+    -fx-font-size: 30px;
     -fx-font-weight: bold;
     -fx-text-fill: #2c3e50;
 }
 
+
+/* MenuDescription */
 .menu-itemHeader
 {
     -fx-font-size: 16px;
@@ -16,12 +18,27 @@
 .menu-itemDescription
 {
     -fx-font-size: 12px;
-    -fx-font-weight: bold;
+    -fx-font-style: italic;
     -fx-text-fill: #2c3e50;
+}
 
+.menu-itemPrice
+{
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+    -fx-text-fill: #2c3e50;
 }
 
 .menu-itemContainer
 {
     -fx-spacing: 1.0;
 }
+
+.menu-itemSpacer {
+    -fx-border-color: transparent transparent black transparent;  /*Top, højre, bund, venstre*/
+    -fx-border-style: dotted;
+    -fx-border-width: 0 0 2 0;
+    -fx-min-height: 1;
+}
+
+

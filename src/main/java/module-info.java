@@ -8,4 +8,6 @@ module org.example.bonesmenucard {
 
     opens org.example.bonesmenucard to javafx.fxml;
     exports org.example.bonesmenucard;
+    exports CustomComps;
+    opens CustomComps to javafx.fxml;
 }

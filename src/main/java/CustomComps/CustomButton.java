@@ -1,4 +1,4 @@
-package org.example.bonesmenucard;
+package CustomComps;
 
 import javafx.scene.control.Button;
 

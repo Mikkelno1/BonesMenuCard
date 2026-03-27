@@ -1,23 +1,22 @@
 package org.example.bonesmenucard;
 
+import CustomComps.MenuDescription;
+import CustomComps.MenuHeader;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 
 
 public class MenuCardUI
 {
-    Pane root;
+    VBox root;
 
-
-
-    MenuHeaders mh = new MenuHeaders("Steak");
-    MenuDescription md = new MenuDescription("Reedd steak", "Made red with love");
+    MenuHeader mh = new MenuHeader("Steak");
+    MenuDescription md = new MenuDescription("The original american spareribs", "Baby Back Ribs with Sam Bone’s original BBQ", "169Kr.");
 
     Label label = new Label("Hello there");
-
-
 
 
     private int mhX = 100;
@@ -33,7 +32,7 @@ public class MenuCardUI
 
     public void uiLayOut()
     {
-        root = new Pane();
+        root = new VBox();
 
         mh.setLayoutX(mhX);
         mh.setLayoutY(mhY);
@@ -42,6 +41,9 @@ public class MenuCardUI
         label.setLayoutX(mdX);
         label.setLayoutY(mdY);
 
+        root.setPadding(new Insets(20));
+        root.setAlignment(Pos.CENTER);
+        root.setStyle("-fx-background-color: #f5f5ee;");
         root.getChildren().addAll(md, mh);
 
     }
